@@ -1,0 +1,329 @@
+body{
+    background-color: white;
+    color: #315c46;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+header{
+    background-color: #b9dfc8;
+    padding: 45px 20px;
+    border-bottom: 3px solid #8fc6a5;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+header p{
+    font-size: large;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.categoria{
+    background-color: white;
+    margin: 25px 0;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgb(2, 22, 10);
+}
+
+.categoria h2{
+    color: #397653;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.servicos-disponibilidade{
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.servicos-disponibilidade .categoria{
+    flex: 1;
+    margin: 25px 0;
+}
+
+.servicos ul{
+    margin: 25px auto 0;
+}
+
+.disponibilidade p{
+    margin: 8px;
+    font-size: 17px;
+}
+
+.foto_profissional{
+    flex-shrink: 0;
+}
+
+.foto_profissional img{
+    width: 190px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #315c46;
+}
+
+.descricao{
+    max-width: 550px;
+}
+
+.descricao p{
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+ul{
+    width: fit-content; 
+    margin: 25px auto 0; 
+    text-align: left; 
+    font-size: large; 
+}
+
+li{
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.categoria p{
+    margin: 8px;
+    font-size: 17px;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid #d4ecdc;
+}
+
+.galeria img:last-child{
+    object-position: center 20%;
+}
+
+.contato{
+    margin: 35px 0;
+}
+
+button{
+    background-color: #4c9a6a;
+    color: white;
+    border: none;
+    padding: 17px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #34784f;
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: #b9dfc8;
+    padding: 20px;
+    color: #315c46;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 16px;
+    }
+
+    header{
+        padding: 35px 15px;
+    }
+
+    header h1{
+        font-size: 32px;
+    }
+
+    header h3{
+        font-size: 21px;
+    }
+
+    header p{
+        font-size: 16px;
+    }
+
+    main{
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    .categoria{
+        padding: 25px 20px;
+        margin: 20px 0;
+        border-radius: 15px;
+    }
+
+    .categoria h2{
+        font-size: 24px;
+    }
+
+    .sobre{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foto_profissional img{
+        width: 160px;
+        height: 200px;
+    }
+
+    .descricao{
+        max-width: 100%;
+    }
+
+    .descricao p{
+        line-height: 1.6;
+    }
+
+    .servicos-disponibilidade{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .servicos-disponibilidade .categoria{
+        width: auto;
+        margin: 15px 0;
+    }
+
+    .galeria{
+        gap: 15px;
+    }
+
+    .galeria img{
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .galeria img:last-child{
+        object-position: center 15%;
+    }
+
+    ul{
+        font-size: 16px;
+    }
+    li{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .categoria p{
+        font-size: 16px;
+    }
+
+    .disponibilidade p{
+        font-size: 16px;
+    }
+
+    button{
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    footer{
+        padding: 18px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        padding: 30px 12px;
+    }
+
+    header h1{
+        font-size: 27px;
+    }
+
+    header h3{
+        font-size: 19px;
+    }
+
+    header p{
+        font-size: 15px;
+    }
+
+    main{
+        width: 94%;
+    }
+
+    .categoria{
+        padding: 22px 15px;
+    }
+
+    .categoria h2{
+        font-size: 21px;
+    }
+
+    .foto_profissional img{
+        width: 140px;
+        height: 175px;
+    }
+
+    .descricao p{
+        font-size: 15px;
+    }
+
+    ul{
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    li{
+        font-size: 15px;
+    }
+
+    .galeria img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .galeria img:last-child{
+        object-position: center 10%;
+    }
+
+    button{
+        width: 90%;
+        max-width: 280px;
+        padding: 14px 20px;
+    }
+
+    footer{
+        font-size: 13px;
+    }
+}
